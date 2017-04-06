@@ -34,7 +34,6 @@ namespace Moustache
             }
             else
             {
-                //File.WriteAllText(options.Output, result);
                 Encoding utf8WithoutBom = new UTF8Encoding(false);
                 using (StreamWriter writer = new StreamWriter(options.Output, false, utf8WithoutBom))
                 {
