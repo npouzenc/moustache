@@ -1,4 +1,5 @@
 ﻿using HandlebarsDotNet;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -45,7 +46,7 @@ namespace Moustache
                 }
                 
                 Mustache = ReadFile(options.InputMustacheFile);
-                Partials = ParsePartials();
+                Partials = ParsePartials();                
             }
             catch (Exception ex)
             {
@@ -72,7 +73,7 @@ namespace Moustache
 
         private dynamic GetJson(string data)
         {
-            var json = Newtonsoft.Json.JsonConvert.DeserializeObject<dynamic>(data);
+            var json = JsonConvert.DeserializeObject<dynamic>(data);
             return json;
         }
 
