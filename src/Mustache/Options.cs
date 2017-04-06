@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mustache
+namespace Moustache
 {
     public class Options
     {

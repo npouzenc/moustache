@@ -9,7 +9,7 @@ using YamlDotNet.Core.Events;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-namespace Mustache
+namespace Moustache
 {
     internal class Processor
     {
@@ -19,7 +19,7 @@ namespace Mustache
         public Options Options { get; set; }
 
         /// <summary>
-        /// Document parse from all inputs files
+        /// Document parsed from all inputs files
         /// </summary>
         public string Document { get; private set; }
 
