@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Moustache
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -17,7 +17,7 @@ namespace Moustache
             {
                 var results = Parser.Default.ParseArguments<Options>(args).WithParsed(options => Run(options));
             }
-            catch (Exception exception) // last chance exception  handler
+            catch (Exception exception) // last chance exception handler
             {
                 Console.Error.WriteLine(exception); // TODO: NLog
             }
@@ -41,6 +41,5 @@ namespace Moustache
                 }
             }
         }
-
     }
 }
