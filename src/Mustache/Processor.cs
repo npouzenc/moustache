@@ -92,7 +92,7 @@ namespace Moustache
             }
         }
 
-        private Func<object, string> CompileMustache()
+        private HandlebarsTemplate<object, object> CompileMustache()
         {
             foreach (var partial in Partials)
             {
